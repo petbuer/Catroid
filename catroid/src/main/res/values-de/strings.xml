@@ -1827,5 +1827,5 @@ Die vorangegangene, veraltete Version unserer Datenschutzrichtlinie (2.0) finden
     <string name="device_language">Systemsprache</string>
     <!-- Symbols -->
     <string name="percent_symbol">%</string>
-    <string name="hertz_symbol">㎐</string>
+    <string name="hertz_symbol">㎐</string><string name="formula_editor_sensor_color_at_x_y">Farbe an Position x y</string>
 </resources>
