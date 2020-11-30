@@ -292,9 +292,6 @@ public final class SensorHandler implements SensorEventListener, SensorCustomEve
 		int rotate;
 
 		switch (sensor) {
-			case COLOR_AT_XY:
-				return Double.NaN;
-
 			case X_ACCELERATION:
 				if ((rotate = rotateOrientation()) != 0) {
 					return (double) ((-instance.linearAccelerationY) * rotate);
