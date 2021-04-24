@@ -90,7 +90,6 @@ class EditLookAction : PocketPaintAction() {
             sprite.look.lookListIndexBeforeLookRequest = lookDataIndex
             sprite.lookList.removeAt(lookDataIndex)
             sprite.lookList.add(lookDataIndex, lookData)
-            lookDataOldFile.delete()
             lookData.collisionInformation.calculate()
         } catch (e: IOException) {
             Log.e(TAG, Log.getStackTraceString(e))
