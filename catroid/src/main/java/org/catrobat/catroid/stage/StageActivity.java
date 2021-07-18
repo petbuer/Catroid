@@ -43,6 +43,7 @@ import android.util.Log;
 import android.util.SparseArray;
 
 import com.badlogic.gdx.ApplicationListener;
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
 import com.badlogic.gdx.backends.android.AndroidGraphics;
@@ -143,6 +144,12 @@ public class StageActivity extends AndroidApplication implements PermissionHandl
 				surveyCampaign.endAppTime(this);
 			}
 		}
+		Gdx.app = null;
+		Gdx.input = null;
+		Gdx.audio = null;
+		Gdx.files = null;
+		Gdx.graphics = null;
+		Gdx.net = null;
 	}
 
 	private boolean isApplicationSentToBackground(final Context context) {
