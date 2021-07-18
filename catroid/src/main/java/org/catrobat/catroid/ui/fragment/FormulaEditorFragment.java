@@ -162,6 +162,14 @@ public class FormulaEditorFragment extends Fragment implements ViewTreeObserver.
 	}
 
 	@Override
+	public void onDestroy() {
+		super.onDestroy();
+		formulaBrick = null;
+		formulaEditorEditText = null;
+		formulaEditorBrick = null;
+	}
+
+	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
 
